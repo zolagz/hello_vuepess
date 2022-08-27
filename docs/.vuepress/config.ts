@@ -36,9 +36,14 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: '《ES6 教程》', link: '/note/es6/' },
           { text: '《Vue》', link: '/note/vue/' },
           { text: '《React》', link: '/note/react/' },
+          { text: '《TypeScript 从零实现 axios》',link: '/note/typescript-axios/'},
           {
-            text: '《TypeScript 从零实现 axios》',
-            link: '/note/typescript-axios/',
+            text: '《Git》',
+            link: '/note/git/',
+          },
+          {
+            text: 'TypeScript',
+            link: '/pages/51afd6/',
           },
         
         ],
@@ -117,13 +122,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logo.png', // 导航栏logo
-    repo: 'xugaoyi/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
+    repo: 'zolagz/hello_vuepess', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
-    docsDir: 'docs', // 编辑的文件夹
-    // docsBranch: 'master', // 编辑的文件所在分支，默认master。 注意：如果你的分支是main则修改为main
-    editLinks: true, // 启用编辑
-    editLinkText: '编辑',
+    // docsDir: 'docs', // 编辑的文件夹
+    // docsBranch: 'main', // 编辑的文件所在分支，默认master。 注意：如果你的分支是main则修改为main
+    // editLinks: true, // 启用编辑
+    // editLinkText: '编辑',
 
     //*** 以下是Vdoing主题相关配置，文档：https://doc.xugaoyi.com/pages/a20ce8/ ***//
 
@@ -164,14 +169,14 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 文章默认的作者信息，(可在md文件中单独配置此信息) string | {name: string, link?: string}
     author: {
-      name: 'xugaoyi', // 必需
-      link: 'https://github.com/xugaoyi', // 可选的
+      name: 'yyq', // 必需
+      link: 'https://github.com', // 可选的
     },
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
       avatar: 'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
-      name: 'Evan Xu',
+      name: 'yyq',
       slogan: '前端界的小学生',
     },
 
@@ -182,12 +187,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         {
           iconClass: 'icon-youjian',
           title: '发邮件',
-          link: 'mailto:894072666@qq.com',
+          link: 'mailto:le_pencil@126.com',
         },
         {
           iconClass: 'icon-github',
           title: 'GitHub',
-          link: 'https://github.com/xugaoyi',
+          link: 'https://github.com',
         },
         {
           iconClass: 'icon-erji',
@@ -350,8 +355,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           clientID: 'a6e1355287947096b88b',
           clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
           repo: 'blog-gitalk-comment', // GitHub 仓库
-          owner: 'xugaoyi', // GitHub仓库所有者
-          admin: ['xugaoyi'], // 对仓库有写权限的人
+          owner: 'yyq', // GitHub仓库所有者
+          admin: ['yyq'], // 对仓库有写权限的人
           // distractionFreeMode: true,
           pagerDirection: 'last', // 'first'正序 | 'last'倒序
           id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
