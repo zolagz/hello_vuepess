@@ -56,25 +56,27 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
             text: 'Java',
             items: [
-              { text: 'Java', link: '/pages/8143cc480faf9a11/' },
+              { text: 'Java 教程', link: '/pages/Java/' },
+              { text: 'SpringBoot 教程', link: '/pages/264139/' },
+              { text: 'SpringCloudAlibaba 教程', link: '/pages/a406d7/' },
             ],
           },
           {
             text: 'Golang',
             items: [
-              { text: '《Golang教程》', link: '/pages/Golang/' },
+              { text: '《Golang 教程》', link: '/pages/Golang/' },
             ],
           },
           {
             text: 'Python',
             items: [
-              { text: '《Python教程》', link: '/pages/063e7f/' },
+              { text: '《Python 教程》', link: '/pages/063e7f/' },
             ],
           },
           {
             text: 'Linux',
             items: [
-              { text: '《Linux教程》', link: '/note/Linux/' },
+              { text: '《Linux 教程》', link: '/pages/Linux/' },
             ],
           },
         ],
