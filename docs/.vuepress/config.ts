@@ -31,46 +31,47 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
+          { text: '《JavaScript教程》', link: '/note/javascript/' },
+          { text: '《JavaScript高级程序设计》', link: '/note/js/' },
+          { text: '《ES6 教程》', link: '/note/es6/' },
+          { text: '《Vue》', link: '/note/vue/' },
+          { text: '《React》', link: '/note/react/' },
           {
-            text: '前端文章',
-            items: [
-              { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
-            ],
+            text: '《TypeScript 从零实现 axios》',
+            link: '/note/typescript-axios/',
           },
-          {
-            text: '学习笔记',
-            items: [
-              { text: '《JavaScript教程》', link: '/note/javascript/' },
-              { text: '《JavaScript高级程序设计》', link: '/note/js/' },
-              { text: '《ES6 教程》', link: '/note/es6/' },
-              { text: '《Vue》', link: '/note/vue/' },
-              { text: '《React》', link: '/note/react/' },
-              {
-                text: '《TypeScript 从零实现 axios》',
-                link: '/note/typescript-axios/',
-              },
-              {
-                text: '《Git》',
-                link: '/note/git/',
-              },
-              {
-                text: 'TypeScript',
-                link: '/pages/51afd6/',
-              },
-              {
-                text: 'JS设计模式总结',
-                link: '/pages/4643cd/',
-              },
-            ],
-          },
+        
         ],
       },
       {
-        text: '页面',
-        link: '/ui/',
+        text: '后端',
+        link: '/back/',
         items: [
-          { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
-          { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
+          {
+
+            text: 'Java',
+            items: [
+              { text: 'Java', link: '/pages/8143cc480faf9a11/' },
+            ],
+          },
+          {
+            text: 'Golang',
+            items: [
+              { text: '《Golang教程》', link: '/pages/Golang/' },
+            ],
+          },
+          {
+            text: 'Python',
+            items: [
+              { text: '《Python教程》', link: '/pages/063e7f/' },
+            ],
+          },
+          {
+            text: 'Linux',
+            items: [
+              { text: '《Linux教程》', link: '/note/Linux/' },
+            ],
+          },
         ],
       },
       {
@@ -315,32 +316,32 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         },
       },
     ],
-     ['vuepress-plugin-readmore-popular', {
-      // 已申请的博客 ID
-      blogId: '18762-1609305354821-257',
-      // 已申请的微信公众号名称
-      name: '全栈技术驿站',
-      // 已申请的微信公众号回复关键词
-      keyword: 'Tech',                    
-      // 已申请的微信公众号二维码链接
-      qrcode: 'https://www.techgrow.cn/img/wx_mp_qr.png',
-      // 文章内容的 JS 选择器，若使用的不是官方默认主题，则需要根据第三方的主题来设置
-      selector: '.theme-vdoing-content',
-      // 自定义的 JS 资源链接，可用于 CDN 加速
-      libUrl: 'https://qiniu.techgrow.cn/readmore/dist/readmore.js',
-      // 自定义的 CSS 资源链接，可用于适配不同风格的博客
-      cssUrl: 'https://qiniu.techgrow.cn/readmore/dist/vuepress.css',
-      // 文章排除添加引流工具的 URL 规则，支持使用路径、通配符、正则表达式的匹配规则
-      excludes: { strExp: [], regExp: [] },
-      // 是否反转 URL 排除规则的配置，即只有符合排除规则的文章才会添加引流工具
-      reverse: false,
-      // 文章解锁后凭证的有效天数
-      expires: 365,
-      // 定时校验凭证有效性的时间间隔（秒）
-      interval: 60,
-      // 每篇文章随机添加引流工具的概率，有效范围在 0.1 ~ 1 之间，1 则表示所有文章默认都自动添加引流工具
-      random: 1
-    }],
+    //  ['vuepress-plugin-readmore-popular', {
+    //   // 已申请的博客 ID
+    //   blogId: '18762-1609305354821-257',
+    //   // 已申请的微信公众号名称
+    //   name: '全栈技术驿站',
+    //   // 已申请的微信公众号回复关键词
+    //   keyword: 'Tech',                    
+    //   // 已申请的微信公众号二维码链接
+    //   qrcode: 'https://www.techgrow.cn/img/wx_mp_qr.png',
+    //   // 文章内容的 JS 选择器，若使用的不是官方默认主题，则需要根据第三方的主题来设置
+    //   selector: '.theme-vdoing-content',
+    //   // 自定义的 JS 资源链接，可用于 CDN 加速
+    //   libUrl: 'https://qiniu.techgrow.cn/readmore/dist/readmore.js',
+    //   // 自定义的 CSS 资源链接，可用于适配不同风格的博客
+    //   cssUrl: 'https://qiniu.techgrow.cn/readmore/dist/vuepress.css',
+    //   // 文章排除添加引流工具的 URL 规则，支持使用路径、通配符、正则表达式的匹配规则
+    //   excludes: { strExp: [], regExp: [] },
+    //   // 是否反转 URL 排除规则的配置，即只有符合排除规则的文章才会添加引流工具
+    //   reverse: false,
+    //   // 文章解锁后凭证的有效天数
+    //   expires: 365,
+    //   // 定时校验凭证有效性的时间间隔（秒）
+    //   interval: 60,
+    //   // 每篇文章随机添加引流工具的概率，有效范围在 0.1 ~ 1 之间，1 则表示所有文章默认都自动添加引流工具
+    //   random: 0
+    // }],
     [
       'vuepress-plugin-comment', // 评论
       {
